@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="prefetch stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>News Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#">
+          <img
+            src="./assets/logo.svg"
+            alt="Website Logo"
+            class="website-logo"
+          />
+        </a>
+        <button id="open-nav" class="hamburger">
+          <box-icon name="menu" size="md"></box-icon>
+        </button>
+        <div id="nav-container" class="nav-links-container">
+          <button id="close-nav" class="menu-close">
+            <box-icon name="x" size="lg"></box-icon>
+          </button>
+          <ul class="nav-links">
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+              <li>New</li>
+            </a>
+            <a href="#">
+              <li>Popular</li>
+            </a>
+            <a href="#">
+              <li>Trending</li>
+            </a>
+            <a href="#">
+              <li>Categories</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-left">
+        <div class="hero-img">
+          <picture>
+            <source
+              media="(min-width: 1300px)"
+              srcset="./assets/image-web-3-desktop.jpg"
+              width="730px"
+              height="300px"
+            />
+            <source
+            media="(min-width: 1268px)"
+            srcset="./assets/image-web-3-desktop.jpg"
+            width="570px"
+            height="234.2465753px"
+            />
+            <img
+              src="./assets/image-web-3-mobile.jpg"
+              alt=""
+              width="343px"
+              height="300px"
+            />
+          </picture>
+        </div>
+        <div class="hero-txt">
+          <h1 class="hero-txt__heading">The Bright Future of Web 3.0?</h1>
+          <div class="hero-txt-para">
+            <p class="hero-txt__para">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="#" class="hero-txt__cta">read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <h1 class="hero-right__heading">New</h1>
+        <div class="hero-right__news">
+          <h2 class="hero-right__news-heading">Hydrogen VS Electric Cars</h2>
+          <p class="hero-right__news-para">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </div>
+        <div class="hero-right__news">
+          <h2 class="hero-right__news-heading">The Downsides of AI Artistry</h2>
+          <p class="hero-right__news-para">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </div>
+        <div class="hero-right__news">
+          <h2 class="hero-right__news-heading">Is VC Funding Drying Up?</h2>
+          <p class="hero-right__news-para">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <section class="featured">
+      <div class="featured-news">
+        <img
+          src="./assets/image-retro-pcs.jpg"
+          alt="Retro PCs"
+          class="featured-news__img"
+        />
+        <div class="featured-news__txt">
+          <h1 class="featured-news__txt-number">01</h1>
+          <h1 class="featured-news__txt-heading">Reviving Retro PCs</h1>
+          <p class="featured-news__txt-para">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+      <div class="featured-news">
+        <img
+          src="./assets/image-top-laptops.jpg"
+          alt="Top laptops"
+          class="featured-news__img"
+        />
+        <div class="featured-news__txt">
+          <h1 class="featured-news__txt-number">02</h1>
+          <h1 class="featured-news__txt-heading">Top 10 Laptops of 2022</h1>
+          <p class="featured-news__txt-para">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+      <div class="featured-news">
+        <img
+          src="./assets/image-gaming-growth.jpg"
+          alt="Growth of Gaming"
+          class="featured-news__img"
+        />
+        <div class="featured-news__txt">
+          <h1 class="featured-news__txt-number">03</h1>
+          <h1 class="featured-news__txt-heading">The Growth of Gaming</h1>
+          <p class="featured-news__txt-para">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>

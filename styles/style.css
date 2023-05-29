@@ -1,0 +1,308 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  max-width: calc(100vw - 2rem);
+  margin: 0 auto;
+  padding: 1.75rem 0 2rem;
+  background-color: #fff;
+}
+
+.website-logo {
+  width: 3.375rem;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 220ms ease-in-out;
+  display: grid;
+  place-content: center;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.625rem;
+}
+.nav-links > a {
+  font-size: 0.9375rem;
+  line-height: 1.73;
+  font-weight: 400;
+  color: #5d5f79;
+  font-size: 1.5rem;
+  color: #00001a;
+}
+
+.hamburger,
+.menu-close {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-close {
+  position: absolute;
+  top: 1.375rem;
+  right: 1.375rem;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hero {
+  max-width: 21.4375rem;
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hero-txt {
+  margin-top: 1.5rem;
+}
+.hero-txt__heading {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.hero-txt__para {
+  font-size: 0.9375rem;
+  line-height: 1.73;
+  font-weight: 400;
+  color: #5d5f79;
+  margin-bottom: 1.5rem;
+}
+.hero-txt__cta {
+  font-size: 0.875rem;
+  line-height: 1.71;
+  letter-spacing: 4.375px;
+  font-weight: 700;
+  color: #fffdfa;
+  text-transform: uppercase;
+  background-color: #f15e50;
+  width: 11.5625rem;
+  height: 3rem;
+  display: grid;
+  place-content: center;
+  transition: all 200ms ease-in-out;
+}
+.hero-txt__cta:hover {
+  background-color: #00001a;
+  color: #fffdfa;
+}
+.hero-right {
+  padding: 1.5rem 1.25rem;
+  background-color: #00001a;
+  color: #fffdfa;
+}
+.hero-right__heading {
+  font-size: 2rem;
+  line-height: 1;
+  color: #eaab53;
+  margin-bottom: 2.1875rem;
+}
+.hero-right__news {
+  padding-bottom: 1.8125rem;
+  border-bottom: 1px solid #5d5f79;
+  margin-bottom: 1.875rem;
+}
+.hero-right__news:nth-child(4) {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.hero-right__news-heading {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.hero-right__news-heading:hover {
+  color: #eaab53;
+}
+.hero-right__news-para {
+  font-size: 0.9375rem;
+  line-height: 1.73;
+  font-weight: 400;
+  color: #5d5f79;
+}
+
+.featured {
+  display: grid;
+  gap: 2rem;
+  max-width: 21.4375rem;
+  margin: 0 auto 5rem;
+}
+.featured-news {
+  display: flex;
+  gap: 1.5rem;
+}
+.featured-news__img {
+  width: 6.25rem;
+  height: 8.0625rem;
+}
+.featured-news__txt-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5d5f79;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+.featured-news__txt-heading {
+  font-size: 1.125rem;
+  line-height: 1.33;
+  color: #00001a;
+  font-weight: 800;
+  margin-bottom: 0.5625rem;
+  cursor: pointer;
+}
+.featured-news__txt-heading:hover {
+  color: #f15e50;
+}
+.featured-news__txt-para {
+  font-size: 0.9375rem;
+  line-height: 1.73;
+  font-weight: 400;
+  color: #5d5f79;
+}
+
+@media (min-width: 1268px) {
+  .hamburger,
+  .menu-close {
+    display: none;
+  }
+  .header {
+    position: static;
+    padding: 3.4375rem 0;
+  }
+  .nav {
+    max-width: calc(100vw - 20.625rem);
+    margin: 0 auto;
+  }
+  .nav-links-container {
+    visibility: visible;
+    opacity: 1;
+    width: inherit;
+    padding: 0;
+    background-color: #fff;
+    position: static;
+  }
+  .nav-links {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .nav-links > a {
+    font-size: 0.9375rem;
+    color: #5d5f79;
+  }
+  .nav-links > a:hover {
+    color: #f15e50;
+  }
+  .hero {
+    max-width: calc(100vw - 20.625rem);
+    display: grid;
+    grid-template-columns: 1fr 21.875rem;
+    gap: 1.875rem;
+    margin-bottom: 4.4375rem;
+  }
+  .hero-txt {
+    margin-top: 1.75rem;
+    display: grid;
+    gap: 1.3125rem;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  }
+  .hero-txt__heading {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  .hero-txt__para {
+    margin-bottom: 1.8125rem;
+  }
+  .featured {
+    max-width: calc(100vw - 12.5rem);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
